@@ -12,7 +12,7 @@
     <div id="main">
       <div id="container">
         <div id="content" role="main">
-          <section id="home">
+          <header id="home">
             <a href="http://www.epam.com/">
               <img src="logo.png" alt="epam">
             </a>
@@ -27,45 +27,48 @@
               <a href="#blockquotes"><b>Blockquotes</b></a>
               <a href="#registration"><b>Registration</b></a>
             </nav>
-            <hr>
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet,
-                <a href="#">test link</a>
-                adipiscing elit.
-                Nullam dignissim convallis est. Quisque aliquam.
-                <em>This is emphasized.</em>
-                Donec faucibus. Nunc iaculis suscipit dui. 4
-                <sup>4</sup> = 256.
-                Phosphoric acid is H<sub>3</sub>PO<sub>4</sub>.
-                Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.
-                <cite>Time Magazine</cite>
-                (That’s a citation).
-                <u>Underline.</u>
-                Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam
-                sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
-                <strong>I am strong.</strong>
-              </p>
-              <p>
-                Watch out for the abbreviations!
-                <abbr title="Hyper Text Markup Language">HTML</abbr>
-                and
-                <abbr title="Cascading Style Sheets">CSS</abbr>
-                are our tools.
-                <abbr title="JavaScript">JS</abbr>
-                is a dynamically typed language.
-                Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae,
-                feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent mattis,
-                massa quis luctus fermentum. To copy a file type
-                <kbd>COPY</kbd>
-                <em>filename</em>.
-                <del>The meeting began at 7pm</del>
-                <ins>Let’s make that 6pm.</ins>
-                This <del>text</del> has been struck.
-              </p>
-              <hr>
-            </div>
-          </section>
+          </header>
+
+          <hr>
+
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet,
+              <a href="#">test link</a>
+              adipiscing elit.
+              Nullam dignissim convallis est. Quisque aliquam.
+              <em>This is emphasized.</em>
+              Donec faucibus. Nunc iaculis suscipit dui. 4
+              <sup>4</sup> = 256.
+              Phosphoric acid is H<sub>3</sub>PO<sub>4</sub>.
+              Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.
+              <cite>Time Magazine</cite>
+              (That’s a citation).
+              <u>Underline.</u>
+              Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam
+              sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
+              <strong>I am strong.</strong>
+            </p>
+            <p>
+              Watch out for the abbreviations!
+              <abbr title="Hyper Text Markup Language">HTML</abbr>
+              and
+              <abbr title="Cascading Style Sheets">CSS</abbr>
+              are our tools.
+              <abbr title="JavaScript">JS</abbr>
+              is a dynamically typed language.
+              Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae,
+              feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent mattis,
+              massa quis luctus fermentum. To copy a file type
+              <kbd>COPY</kbd>
+              <em>filename</em>.
+              <del>The meeting began at 7pm</del>
+              <ins>Let’s make that 6pm.</ins>
+              This <del>text</del> has been struck.
+            </p>
+          </div>
+
+          <hr>
 
           <section id="headings">
             <p>
@@ -79,8 +82,9 @@
             <h4>Heading 4</h4>
             <h5>Heading 5</h5>
             <h6>Heading 6</h6>
-            <hr>
           </section>
+
+          <hr>
 
           <section id="text">
             <h2>Text formats</h2>
@@ -92,7 +96,9 @@
               <p id="author-description">Article description</p>
             </article>
             <h3>Preformatted Text</h3>
-            <pre>Text in a <strong>pre</strong> element
+            <pre>
+              
+Text in a <strong>pre</strong> element
 is displayed in a fixed-width
 font, and it preserves
 both           <strong>spaces</strong> and
@@ -151,11 +157,12 @@ both           <strong>spaces</strong> and
                 <option value="css">CSS</option>
               </select>
             </span>
-            <hr>
           </section>
 
+          <hr>
+          <hr>
+
           <section id="table">
-            <hr>
             <h2>Table</h2>
             <table>
               <thead>
@@ -200,29 +207,32 @@ both           <strong>spaces</strong> and
               <br>
               <a href="#">Robert C. Martin (Uncle Bob)</a>
             </blockquote>
-            <hr>
           </section>
 
-          <form action="#" method="post" id="registration">
-            <fieldset>
-              <label for="userName">Username:</label>
-              <input type="text" name="firstname" id="userName">
-            </fieldset>
-            <fieldset>
-              <label for="email">Email:</label>
-              <input type="email" name="email" id="email">
-            </fieldset>
-            <fieldset>
-              <label for="password">Password:</label>
-              <input type="number" name="password" id="password">
-            </fieldset>
-            <fieldset>
-              <textarea rows="4" cols="23"></textarea>
-            </fieldset>
-            <fieldset>
-              <button type="button" name="button">Submit</button>
-            </fieldset>
-          </form>
+          <hr>
+
+          <div id="registration">
+            <form action="#" method="post">
+              <fieldset>
+                <label for="userName">Username:</label>
+                <input type="text" name="firstname" id="userName">
+              </fieldset>
+              <fieldset>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+              </fieldset>
+              <fieldset>
+                <label for="password">Password:</label>
+                <input type="number" name="password" id="password">
+              </fieldset>
+              <fieldset>
+                <textarea rows="4" cols="23"></textarea>
+              </fieldset>
+              <fieldset>
+                <button type="submit" name="Submit">Submit</button>
+              </fieldset>
+            </form>
+          </div>
 
           <footer>
             <span>&copy; Copyright Epam Systems</span>
